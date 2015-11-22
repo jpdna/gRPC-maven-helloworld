@@ -12,15 +12,18 @@ Clone this respositry from github and then run:
 mvn clean package
 ```
 
-Note the proto file define the gRPC service at:
-'''
+Note the hello_world.proto file defined the gRPC service at:
+```
 src/main/proto/hello_world.proto
-'''
+```
+I did change the java_package name in hello_world.proto so the generated code would be in same package org.jpna.grchhellow as the application code
 
-Due to the protoc and gRPC plugins mention in the POM, code is generated during the build and placed in
+Due to the protoc and gRPC plugins mentioned in the POM, code is generated during the build and placed in
 ````
 target/generated-sources
 ```
+
+protoc binary will need to be available in your PATH
 
 To run the server, from the root of the cloned repository run:
 ```
