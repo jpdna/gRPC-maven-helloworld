@@ -16,7 +16,7 @@ Note the hello_world.proto file defined the gRPC service at:
 ```
 src/main/proto/hello_world.proto
 ```
-I did change the java_package name in hello_world.proto so the generated code would be in same package org.jpna.grchhellow as the application code
+I did change the java_package name in hello_world.proto so the generated code would be in same package org.jpdna.grchhellow as the application code
 
 Due to the protoc and gRPC plugins mentioned in the POM, code is generated during the build and placed in
 ````
